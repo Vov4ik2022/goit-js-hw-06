@@ -16,7 +16,28 @@ const images = [
 
 const listEl = document.querySelector('.gallery');
 
-const gallery = images.map(({url, alt}) => `<li> <img src="${url}" alt="${alt}"> </li>`).join("");
-listEl.insertAdjacentHTML("afterbegin", gallery);
+const galleryEl = images
+  .map(
+    ({ url, alt }) =>
+      `<li> <img src="${url}" alt="${alt}" height="225" width="378"> </li>`
+  )
+  .join(" ");
+listEl.insertAdjacentHTML("afterbegin", galleryEl);
+console.log(galleryEl);
+
+listEl.style.display = "flex";
+listEl.style.gap = "20px";
+
+
+// const galleryImgEl = document.querySelector('img');
+// galleryImgEl.classList.add('gallery-img');
+
+// galleryImgEl.style.height = '750px';
+// galleryImgEl.style.width = '1260px';
+
+
+
+
+
 
 
