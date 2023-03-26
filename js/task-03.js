@@ -27,14 +27,7 @@ console.log(galleryEl);
 
 listEl.style.display = "flex";
 listEl.style.gap = "20px";
-
-
-// const galleryImgEl = document.querySelector('img');
-// galleryImgEl.classList.add('gallery-img');
-
-// galleryImgEl.style.height = '750px';
-// galleryImgEl.style.width = '1260px';
-
+listEl.style.listStyle = "none";
 
 
 

@@ -11,12 +11,3 @@ const textInputEl = (event) => {
 };
 
 userTextInputEl.addEventListener("input", textInputEl);
-
-
-// userTextInputEl.addEventListener('input', (event) => {
-//     formTextOutputEl.textContent = event.currentTarget.value;
-
-//     if (userTextInputEl.value === " ") {
-//         formTextOutputEl.textContent = `Anonymous`;
-//     };
-// });
